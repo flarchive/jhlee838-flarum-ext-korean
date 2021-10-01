@@ -1,0 +1,268 @@
+imgur-upload:
+  forum:
+    upload: 이미지 업로드
+    loading: 업로드 중...
+    done: 업로드 완료
+
+#TODO
+
+antoinefr-online:
+  forum:
+    andmore: +{more}명...
+
+fof-username-request:
+  admin:
+    permissions:
+      start: 이름 변경 요청
+      moderate: 사용자 이름 변경 요청 승인
+  forum:
+    action:
+      title: => fof-username-request.forum.results.title
+      help_text: 요청한 이름이 커뮤니티 규정을 준수하는지 확인해 주세요.
+      decision_title: 결정
+      approval_label: 승인
+      rejected_label: 거절
+      submit_button: 확인
+      reason_title: 거절 사유
+      success: 결정이 전송되었어요.
+      name: '{username}가 "{newUsername}"로 이름 변경을 요청합니다.'
+    results:
+      title: 이름 변경 요청
+      approved: '이름 변경 요청이 승인되었어요.'
+      new_username: '당신의 이름은 "{username}"로 변경되었어요.'
+      rejected: 이름 변경 요청이 비승인되었어요.
+      reason: '비승인 이유: <i>"{reason}"</i>.'
+      resubmit: 원하시면 계정 설정에서 이름 변경 요청을 다시 보낼 수 있어요.
+    request:
+      title: 바꿀 이름을 입력 후<br>비밀번호를 확인하세요.
+      current_request: 이미 "{username}"이라는 이름으로 변경을 요청했어요. 요청을 업데이트하거나 취소할 수 있어요.
+      submit_button: 요청
+      delete_button: 요청 취소
+      confirmation_message: 이름 변경이 완료되었어요. 새롭게 시작해 볼까요?
+      dismiss_button: 확인
+      deleted: 요청이 취소되었어요.
+    account_label: 이름 변경
+    profile_link: 이름 변경 기록
+    dropdown:
+      empty_text: 이름 변경 요청이 없어요.
+      tooltip: => fof-username-request.forum.dropdown.title
+      title: 이름 변경
+      item_text: "{username}가 이름 변경을 요청합니다."
+      exerpt: "이름: {requestedUsername}"
+
+  #TODO
+
+saleksin-auth-google:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Google Settings modal dialog.
+    google_settings:
+      client_id_label: App ID
+      client_secret_label: App Secret
+      title: Google Settings
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used in the Log In modal dialog.
+    log_in:
+      with_google_button: Google 로그인
+
+#TODO
+
+dem13n:
+  forum:
+    nickname:
+      head_title: 이름
+      new_nickname: 새로운 이름을 입력하세요
+      change: 이름 바꾸기
+      submit_button: => core.ref.save_changes
+  admin:
+    nickname:
+      settings_modal_title: Settings Nickname Changer
+      unlimited_nickname_change: Unlimited nickname change
+      allow_nickname_change: Allow nickname change
+      allow_nickname_unique: Allow same nicknames
+      regex: Regular expression for validation
+      min_char: Minimum characters in a nickname
+      max_char: Maximum characters in a nickname
+      submit_button: => core.ref.save_changes
+
+#TODO
+
+core:
+  forum:
+    index_sort:
+      popular_button: Popular
+      unpopular_button: Unpopular
+
+flarum_discussion_views:
+  forum:
+    modal_resetviews:
+      title: Reset discussion view count
+      submit: Yes, remove all
+      label: This will remove {count} view of this discussion. Continue?|This will remove {count} views of this discussion. Continue?
+    discussion_controls:
+      resetviews_button: Reset views
+    viewlist:
+      title: Latest viewers
+  admin:
+      permissions:
+        reset_views_label: Set discussion views
+      settings:
+        title: Discussionviews settings
+        track_unique: Track unique views
+        abbr_numbers: Abbreviate view numbers
+        show_filter: Enable (un)popular sort field
+        max_viewcount: Maximum viewlist items
+        show_viewlist: Enable viewlist
+
+#TODO
+
+fof-userbio:
+  forum:
+    userbioPlaceholder: 당신에 대해 적어보세요.
+
+#TODO
+
+core:
+  forum:
+    index_sort:
+      hot_button: 좋아요순
+      
+fof-gamification:
+  forum:
+    votes: 투표
+    vote_title: 누가 투표했는지 보기
+    nav:
+      name: 순위
+    ranking:
+      rank: 순위
+      name: 이름
+      amount: 포인트
+    notification:
+      upvote: "{username}님이 당신의 글을 좋아해요."
+      downvote: "{username}님이 당신의 글을 싫어해요."
+    user:
+      points: "포인트: {points}"
+      rank: "{rank}"
+    modal:
+      title: 투표자
+      upvotes_label: '좋아요:'
+      downvotes_label: '싫어요:'
+    mod_item: 투표자 보기
+  admin:
+    permissions:
+      vote_label: Upvote/Downvote posts
+      see_votes_label: See post upvotes/downvotes
+      see_ranking_page: See ranking page
+    nav:
+      desc: Gamification for your Flarum community
+    page:
+      rankings:
+        blocked:
+          placeholder: CDK2020, Ralkage, AngelAvila
+          title: Ignored Users
+          help: 이 사용자들은 랭킹 페이지에 보이지 않아요. Usernames should be seperated by a comma followed by a space.
+        title: 순위 페이지
+        enable: 커스텀 이미지 켜기
+        custom_image_1: 1st place image
+        custom_image_2: 2nd place image
+        custom_image_3: 3rd place image
+      votes:
+        points_title: Points Placeholder
+        points_placeholder: "Points: "
+        color_holder: '#ffffff'
+        auto_upvote: Auto upvote posts when posted
+        rate_limit: Enforce a vote rate limit (10 seconds)
+        discussion_page: Show total votes of original post on discussions list
+        title: Votes
+        vote_color: Voted color
+        icon_name: Upvote/downvote icon
+        icon_help: "Input any Font-Awesome icon that is suffixed with -up and -down. Examples: arrow, thumbs, chevron"
+      save_settings: Save settings
+      convert:
+        button: Convert likes to upvotes
+        help: Convert your previous likes from flarum-ext-likes into upvotes, as well as calculate the hotness for all current discussions.
+        converting: Your likes are now being converted. Refresh your site after a few minutes to see the process finished. (Conversion time might take a while depending on your total forum likes)
+        converted: "Successfully converted all {number} likes"
+      ranks:
+        title: Ranks
+        ranks: Custom ranks
+        number_title: How many rank badges should be shown?
+        help:
+          color: '#ffffff'
+          help: "Input the required number of upvotes, the name of the rank, and the hex color of the rank"
+          points: Points
+          name: Name
+
+#TODO
+
+fof-links:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These strings are used in the Edit Link modal dialog.
+    edit_link:
+      delete_link_button: Delete Link
+      delete_link_confirmation: "Are you sure you want to delete this link?"
+      internal_link: "Is it a Flarum link?"
+      open_newtab: "Open link in new tab"
+      submit_button: => core.ref.save_changes
+      title: => fof-links.ref.create_link
+      title_label: => fof-links.ref.title
+      title_placeholder: => fof-links.ref.title
+      url_label: => fof-links.ref.url
+      url_placeholder: => fof-links.ref.url
+
+    # These strings are used in the Links page.
+    links:
+      about_text: Manage primary menu links.
+      create_button: => fof-links.ref.create_link
+      links: => fof-links.ref.links
+
+    # These strings are used in the navigation bar.
+    nav:
+      links_button: => fof-links.ref.links
+      links_text: Manage the primary navigation list items.
+
+  # Strings in this namespace are referenced by two or more unique keys.
+  ref:
+    create_link: Create Link
+    links: Links
+    title: Title
+    url: Url
+
+#TODO
+
+
+flagrow-ads:
+    admin:
+        buttons:
+            save: 설정 저장
+        positions:
+            under-header:
+                title: Ad position under navigational header
+                placeholder: Insert your ad code here.
+            between-posts:
+                title: Ad position between posts
+                placeholder: => flagrow-ads.admin.positions.under-header.placeholder
+            under-nav-items:
+                title: Ad position in the left column under tags on frontpage
+                placeholder: => flagrow-ads.admin.positions.under-header.placeholder
+        settings:
+            start-from-post: Specify from which post to start to show an ad
+            between-n-posts: Specify after how many posts to place an ad
+        tab:
+            description: Set ads preferences and positions.
