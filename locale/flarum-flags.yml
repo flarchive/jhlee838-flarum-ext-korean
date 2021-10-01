@@ -1,0 +1,61 @@
+flarum-flags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      flag_posts_label: 글 신고
+      view_flags_label: 신고된 글 보기
+
+    # These translations are used in the Flags Settings modal dialog.
+    settings:
+      guidelines_url_label: 게시판 가이드라인 URL
+      title: 표시 설정
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Flag Post modal dialog.
+    flag_post:
+      confirmation_message: 신고해주셔서 감사합니다. 관리자가 확인할 예정입니다.
+      dismiss_button: => core.ref.okay
+      reason_inappropriate_label: 부적합
+      reason_inappropriate_text: "이 글은 커뮤니티 <a>가이드라인</a>에 위배됩니다."
+      reason_off_topic_label: "주제 밖"
+      reason_off_topic_text: 이 글은 현 게시판 주제와 무관한 내용이므로 다른 곳으로 옮겨야 합니다.
+      reason_other_label: 기타
+      reason_spam_label: 스팸
+      reason_spam_text: 이 글은 광고입니다.
+      submit_button: => flarum-flags.ref.flag_post
+      title: => flarum-flags.ref.flag_post
+
+    # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
+    flagged_posts:
+      empty_text: 신고 없음
+      item_text: "{username}가 신고한 글: <em>{discussion}</em> "
+      title: => flarum-flags.ref.flagged_posts
+      tooltip: => flarum-flags.ref.flagged_posts
+
+    # These translations are used by the frame displayed around flagged posts.
+    post:
+      dismiss_flag_button: 신고 무시
+      flagged_by_text: "{username}으로 표시"
+      flagged_by_with_reason_text: "{username}가 신고했습니다. 이유: {reason}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      flag_button: 신고
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    flag_post: 글 신고
+    flagged_posts: 신고된 글
