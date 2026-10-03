@@ -2,13 +2,14 @@
 
 > **Read-only archive of released versions of jhlee838/flarum-ext-korean.** Not for installation: use [Packagist](https://packagist.org/packages/jhlee838/flarum-ext-korean) or the [upstream repository](https://github.com/jhlee838/flarum-ext-korean).
 
-**0** versions archived · Latest: [`v1.0.1`](https://github.com/flarchive/jhlee838-flarum-ext-korean/tree/archive/v1.0.1) · License: `MIT` · Flarum: `^1.0`
+**2** versions archived · Latest: [`v1.0.1`](https://github.com/flarchive/jhlee838-flarum-ext-korean/tree/archive/v1.0.1) · License: `MIT` · Flarum: `^1.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.0` | 2021-10-01 | `^1.0` | [Browse](https://github.com/flarchive/jhlee838-flarum-ext-korean/tree/archive/v1.0.0) |
+| `v1.0.1` | 2021-10-01 | `^1.0` | [Browse](https://github.com/flarchive/jhlee838-flarum-ext-korean/tree/archive/v1.0.1) |
 
 Catalog entry: [packages/jhlee838-flarum-ext-korean.json](https://github.com/flarchive/archive-index/blob/main/packages/jhlee838-flarum-ext-korean.json)
 
